@@ -1,0 +1,77 @@
+#page {
+    padding-top: 60px;
+}
+.home {
+}
+.home h1 {
+}
+.home.hero-unit{
+}
+.home.hero-unit h1{
+	font-size:35px;
+}
+.heading {
+font-size: 35px;
+}
+.button-wrap {
+float: right;
+margin: 25px 0 0 0;
+}
+.content-badge {
+	background: #fafafa;
+	padding: 18px;
+	position: relative;
+	border: 1px solid #ddd;
+	border-bottom-color: #f5f5f5;
+	-moz-box-shadow: 0px 3px 0px rgba(0,0,0,0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 0px 3px 0px rgba(0,0,0,0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0px 3px 0px rgba(0,0,0,0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+#toTop {
+	display:block;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:30px;
+	overflow:hidden;
+	width:35px;
+	height:35px;
+	border:none;
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	text-align: center;
+	background: #222222;
+	border: 3px solid #2f96b4;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+#toTop:hover{
+	background-color:#3c4852;
+}
+
+#toTopHover {
+	color: #ffffff;
+	text-indent:100%;
+	font-size: 60px;
+	background:url(../images/ui.totop.png) no-repeat left -51px;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}

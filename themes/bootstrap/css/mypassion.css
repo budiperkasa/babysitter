@@ -1,0 +1,142 @@
+.entrytitle{
+	background:url(../images/title.png) no-repeat center bottom;
+	padding-bottom:25px;
+	margin-bottom:30px;
+	text-align:center;
+}
+.entrytitle h4{
+	margin-bottom:5px;
+	font-size:22px;
+	text-transform:uppercase;
+}
+.entrytitle p{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-style:italic;
+	margin:0;
+}
+
+
+/* HOMEPAGE PORTFOLIO 2 ANIMATION */
+.og-grid li{
+	opacity: 0;
+}
+.og-grid li.mypassion-animation{
+	-webkit-animation: mypassion-ltr 1s 1 ease; /* Safari 4+ */ /* linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(0.175, 0.885, 0.320, 1.275) */
+	-moz-animation:    mypassion-ltr 1s 1 ease; /* Fx 5+ */
+	-o-animation:      mypassion-ltr 1s 1 ease; /* Opera 12+ */
+	animation:         mypassion-ltr 1s 1 ease; /* IE 10+ */
+	opacity: 1;
+}
+
+
+/* ENTRY TITLE ANIMATION */
+.entrytitle h4, .entrytitle p{
+	opacity: 0;
+}
+.entrytitle.mypassion-animation h4{
+	-webkit-animation: mypassion-ltr 1s 1 ease; /* Safari 4+ */ /* linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(0.175, 0.885, 0.320, 1.275) */
+	-moz-animation:    mypassion-ltr 1s 1 ease; /* Fx 5+ */
+	-o-animation:      mypassion-ltr 1s 1 ease; /* Opera 12+ */
+	animation:         mypassion-ltr 1s 1 ease; /* IE 10+ */
+	opacity: 1;
+}
+.entrytitle.mypassion-animation p{
+	-webkit-animation: mypassion-rtl 1s 1 ease; /* Safari 4+ */ /* linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(0.175, 0.885, 0.320, 1.275) */
+	-moz-animation:    mypassion-rtl 1s 1 ease; /* Fx 5+ */
+	-o-animation:      mypassion-rtl 1s 1 ease; /* Opera 12+ */
+	animation:         mypassion-rtl 1s 1 ease; /* IE 10+ */
+	opacity: 1;
+}
+
+/* TIMELINE ANIMATION */
+.timeline li{
+	opacity: 0;
+}
+
+.timeline li.mypassion-animation{
+	-webkit-animation: mypassion-btt 1s 1 ease; /* Safari 4+ */ /* linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(0.175, 0.885, 0.320, 1.275) */
+	-moz-animation:    mypassion-btt 1s 1 ease; /* Fx 5+ */
+	-o-animation:      mypassion-btt 1s 1 ease; /* Opera 12+ */
+	animation:         mypassion-btt 1s 1 ease; /* IE 10+ */
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*fade in animation*/
+
+@-webkit-keyframes mypassion-ltr {
+  0%   { -webkit-transform:translate(-10%,0); opacity: 0;  }
+  100% { -webkit-transform:translate(0,0); opacity: 1; }
+}
+@-moz-keyframes mypassion-ltr {
+  0%   { -moz-transform:translate(-10%,0); opacity: 0;  }
+  100% { -moz-transform:translate(0,0); opacity: 1; }
+}
+@-o-keyframes mypassion-ltr {
+  0%   { -o-transform:translate(-10%,0); opacity: 0;  }
+  100% { -o-transform:translate(0,0); opacity: 1; }
+}
+@keyframes mypassion-ltr {
+  0%   { transform:translate(-10%,0); opacity: 0;  }
+  100% { transform:translate(0,0); opacity: 1; }
+}
+
+@-webkit-keyframes mypassion-rtl {
+  0%   { -webkit-transform:translate(10%,0); opacity: 0;  }
+  100% { -webkit-transform:translate(0,0); opacity: 1; }
+}
+@-moz-keyframes mypassion-rtl {
+  0%   { -moz-transform:translate(10%,0); opacity: 0;  }
+  100% { -moz-transform:translate(0,0); opacity: 1; }
+}
+@-o-keyframes mypassion-rtl {
+  0%   { -o-transform:translate(10%,0); opacity: 0;  }
+  100% { -o-transform:translate(0,0); opacity: 1; }
+}
+@keyframes mypassion-rtl {
+  0%   { transform:translate(10%,0); opacity: 0;  }
+  100% { transform:translate(0,0); opacity: 1; }
+}
+
+@-webkit-keyframes mypassion-btt {
+  0%   { -webkit-transform:translate(0,20%); opacity: 0;  }
+  100% { -webkit-transform:translate(0,0); opacity: 1; }
+}
+@-moz-keyframes mypassion-btt {
+  0%   { -moz-transform:translate(0,20%); opacity: 0;  }
+  100% { -moz-transform:translate(0,0); opacity: 1; }
+}
+@-o-keyframes mypassion-btt {
+  0%   { -o-transform:translate(0,20%); opacity: 0;  }
+  100% { -o-transform:translate(0,0); opacity: 1; }
+}
+@keyframes mypassion-btt {
+  0%   { transform:translate(0,20%); opacity: 0;  }
+  100% { transform:translate(0,0); opacity: 1; }
+}
+
+@-webkit-keyframes mypassion-ttb {
+  0%   { -webkit-transform:translate(0, -10%); opacity: 0;  }
+  100% { -webkit-transform:translate(0,0); opacity: 1; }
+}
+@-moz-keyframes mypassion-ttb {
+  0%   { -moz-transform:translate(0, -10%); opacity: 0;  }
+  100% { -moz-transform:translate(0,0); opacity: 1; }
+}
+@-o-keyframes mypassion-ttb {
+  0%   { -o-transform:translate(0, -10%); opacity: 0;  }
+  100% { -o-transform:translate(0,0); opacity: 1; }
+}
+@keyframes mypassion-ttb {
+  0%   { transform:translate(0, -10%); opacity: 0;  }
+  100% { transform:translate(0,0); opacity: 1; }
+}
+
+
+

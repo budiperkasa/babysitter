@@ -1,0 +1,1579 @@
+2014/04/30 15:50:04 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootsrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(103): CModule->getComponent('bootstrap')
+#3 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/page&view=about
+---
+2014/04/30 15:52:17 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootsrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(103): CModule->getComponent('bootstrap')
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CModule->__get('bootstrap')
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/page&view=about
+---
+2014/04/30 19:02:59 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "register".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('register', Array)
+#1 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): Bootstrap->register()
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/
+---
+2014/04/30 19:28:24 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(103): CModule->getComponent('bootstrap')
+#3 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 19:29:47 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 19:30:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 19:33:36 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 19:33:38 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 19:35:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/goblog/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/
+---
+2014/04/30 20:01:39 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:02:23 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:02:27 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:02:42 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:05:40 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:05:41 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:05:42 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:05:43 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:05:44 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:06:32 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:06:33 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.resposiveCss" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/YiiBase.php(220): CComponent->__set('resposiveCss', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php?r=gii
+---
+2014/04/30 20:07:38 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "register".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('register', Array)
+#1 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): Bootstrap->register()
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:08:58 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:09:21 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:09:23 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:09:59 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 /var/www/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /var/www/framework/base/CApplication.php(163): CModule->preloadComponents()
+#4 /var/www/framework/YiiBase.php(125): CApplication->__construct('/var/www/goblog...')
+#5 /var/www/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/goblog...')
+#6 /var/www/goblog/index.php(13): YiiBase::createWebApplication('/var/www/goblog...')
+#7 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:11:54 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "register".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('register', Array)
+#1 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): Bootstrap->register()
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:23:28 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "register".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('register', Array)
+#1 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): Bootstrap->register()
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/04/30 20:24:20 [error] [exception.CException] exception 'CException' with message 'Bootstrap and its behaviors do not have a method or closure named "register".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): CComponent->__call('register', Array)
+#1 /var/www/goblog/themes/bootstrap/views/layouts/main.php(12): Bootstrap->register()
+#2 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#4 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#5 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#11 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#12 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#13 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/goblog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/goblog/index.php
+---
+2014/05/01 09:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "abouts" was not found.' in /var/www/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('abouts')
+#1 /var/www/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/goblog/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/goblog/index.php?r=site/page&view=abouts
+---
+2014/05/01 12:54:02 [error] [php] Use of undefined constant baseUrl - assumed 'baseUrl' (/var/www/goblog/themes/bootstrap/views/layouts/main.php:9)
+Stack trace:
+#0 /var/www/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/goblog/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/framework/web/CBaseController.php(126): require()
+#7 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php
+in /var/www/goblog/themes/bootstrap/views/layouts/main.php (9)
+in /var/www/goblog/protected/views/layouts/column1.php (6)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+2014/05/01 15:04:00 [error] [exception.CException] exception 'CException' with message 'Property "TbBox.htmlOption" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('htmlOption', Array)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/framework/web/CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(27): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php
+HTTP_REFERER=http://localhost/goblog/index.php
+---
+2014/05/01 20:06:45 [error] [exception.CException] exception 'CException' with message 'Property "TbButtonGroup.label" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('label', 'Contact Us')
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(92): CBaseController->widget('bootstrap.widge...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/01 20:45:35 [error] [exception.CException] exception 'CException' with message 'Property "TbButtonGroup.loadingText" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('loadingText', 'loading...')
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(109): CBaseController->widget('bootstrap.widge...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/01 20:47:12 [error] [exception.CException] exception 'CException' with message 'Property "TbButtonGroup.loadingText" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('loadingText', 'loading...')
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(109): CBaseController->widget('bootstrap.widge...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/01 22:22:58 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/../partial/hello".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/site/index.php(6): CController->renderPartial('/../partial/hel...')
+#1 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#2 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#3 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#4 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/goblog/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php
+---
+2014/05/01 22:23:59 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/../hello".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/goblog/themes/bootstrap/views/site/index.php(6): CController->renderPartial('/../hello')
+#1 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#2 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', NULL, true)
+#3 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', NULL, true)
+#4 /var/www/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /var/www/goblog/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/goblog/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php
+---
+2014/05/01 22:55:39 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login.php:29)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/partial/specialButton.php(21): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/goblog/themes/bootstrap/views/site/index.php(20): SiteController->renderPartial()
+#6 /var/www/framework/web/CBaseController.php(126): require()
+#7 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#9 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#10 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/login.php (29)
+in /var/www/goblog/themes/bootstrap/views/partial/specialButton.php (21)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (20)
+2014/05/01 23:23:39 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/specialButton.php:34)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(20): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php
+in /var/www/goblog/themes/bootstrap/views/partial/specialButton.php (34)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (20)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+2014/05/01 23:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logins".' in /var/www/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction('logins')
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run('logins')
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/logins')
+#3 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/goblog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goblog/index.php?r=site/logins
+---
+2014/05/01 23:30:10 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/specialButton.php:31)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(20): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php
+in /var/www/goblog/themes/bootstrap/views/partial/specialButton.php (31)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (20)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+2014/05/02 00:13:43 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/specialButton.php:14)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(20): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/specialButton.php (14)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (20)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+2014/05/02 00:26:33 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:28:50 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:31 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:33 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:34 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:56 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:57 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:57 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:29:59 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:31:40 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (32)
+in /var/www/goblog/index.php (13)
+2014/05/02 00:34:54 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "contacts".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/framework/web/CController.php(782): CController->renderPartial('contacts', Array, true)
+#1 /var/www/goblog/protected/controllers/SiteController.php(91): CController->render('contacts', Array)
+#2 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#3 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run('contact')
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#8 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/goblog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goblog/index.php?r=site/contact
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/02 00:41:28 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/homeContact.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(50): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/homeContact.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (50)
+2014/05/02 00:45:17 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "homeContact".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/framework/web/CController.php(782): CController->renderPartial('homeContact', Array, true)
+#1 /var/www/goblog/protected/controllers/SiteController.php(50): CController->render('homeContact', Array)
+#2 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#8 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/goblog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/02 00:49:50 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/homeContact.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(50): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/homeContact.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (50)
+2014/05/02 00:53:57 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/homeContact.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(50): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/homeContact.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (50)
+2014/05/02 00:57:48 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/homeContact.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(33): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/homeContact.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (33)
+2014/05/02 00:58:58 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/partial/homeContact.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(33): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/partial/homeContact.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (33)
+2014/05/02 01:00:15 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/index.php:63)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/goblog/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/index.php (63)
+in /var/www/goblog/protected/controllers/SiteController.php (33)
+in /var/www/goblog/index.php (13)
+2014/05/02 01:07:24 [error] [php] include(Login2Form.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/goblog/protected/controllers/SiteController.php(29): spl_autoload_call()
+#1 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin2()
+#2 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/login2
+in /var/www/goblog/protected/controllers/SiteController.php (29)
+in /var/www/goblog/index.php (13)
+2014/05/02 01:09:43 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/02 01:11:39 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/02 01:13:21 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/02 01:13:23 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/02 01:13:24 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php?r=site/index
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/02 01:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login2".' in /var/www/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction('login2')
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run('login2')
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login2')
+#3 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/goblog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goblog/index.php?r=site/login2
+---
+2014/05/02 01:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login2".' in /var/www/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction('login2')
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run('login2')
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login2')
+#3 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/goblog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goblog/index.php?r=site/login2
+---
+2014/05/02 01:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login2".' in /var/www/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction('login2')
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run('login2')
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login2')
+#3 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/goblog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/goblog/index.php?r=site/login2
+---
+2014/05/02 01:17:00 [error] [php] Undefined variable: model (/var/www/goblog/themes/bootstrap/views/site/login2.php:28)
+Stack trace:
+#0 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/goblog/themes/bootstrap/views/site/index.php(36): SiteController->renderPartial()
+#2 /var/www/framework/web/CBaseController.php(126): require()
+#3 /var/www/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /var/www/framework/web/CController.php(869): SiteController->renderFile()
+#5 /var/www/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /var/www/goblog/protected/controllers/SiteController.php(77): SiteController->render()
+#7 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/framework/web/CController.php(286): SiteController->runAction()
+#10 /var/www/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/goblog/index.php(13): CWebApplication->run()
+REQUEST_URI=/goblog/index.php
+in /var/www/goblog/themes/bootstrap/views/site/login2.php (28)
+in /var/www/goblog/themes/bootstrap/views/site/index.php (36)
+in /var/www/goblog/protected/controllers/SiteController.php (77)
+2014/05/03 03:54:48 [error] [exception.CException] exception 'CException' with message 'Alias "topBottom.scroll" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('topBottom.scrol...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'topBottom.scrol...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('topBottom.scrol...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(71): CBaseController->widget('topBottom.scrol...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 03:55:11 [error] [exception.CException] exception 'CException' with message 'Alias "ext.topBottom.scroll" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('ext.topBottom.s...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.topBottom.s...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.topBottom.s...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(71): CBaseController->widget('ext.topBottom.s...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 03:56:17 [error] [exception.CException] exception 'CException' with message 'Alias "topBottom.scroll" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('topBottom.scrol...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'topBottom.scrol...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('topBottom.scrol...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(71): CBaseController->widget('topBottom.scrol...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 03:56:20 [error] [exception.CException] exception 'CException' with message 'Alias "topBottom.scroll" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('topBottom.scrol...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'topBottom.scrol...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('topBottom.scrol...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(71): CBaseController->widget('topBottom.scrol...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 03:56:21 [error] [exception.CException] exception 'CException' with message 'Alias "topBottom.scroll" is invalid. Make sure it points to an existing directory or file.' in /var/www/framework/YiiBase.php:347
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('topBottom.scrol...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'topBottom.scrol...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('topBottom.scrol...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(71): CBaseController->widget('topBottom.scrol...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 04:15:02 [error] [exception.CException] exception 'CException' with message 'Alias "ext.backToTop.BackToTop" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('ext.backToTop.B...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.backToTop.B...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.backToTop.B...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/layouts/main.php(66): CBaseController->widget('ext.backToTop.B...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/goblog/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#13 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#14 /var/www/framework/web/CController.php(784): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#15 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#16 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/goblog/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 12:38:00 [error] [exception.CException] exception 'CException' with message 'Alias "ext.carouFredSel.ECarouFredSel" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(146): YiiBase::import('ext.carouFredSe...', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.carouFredSe...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.carouFredSe...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(37): CBaseController->widget('ext.carouFredSe...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/03 19:03:10 [error] [exception.CException] exception 'CException' with message 'MyAnimation and its behaviors do not have a method or closure named "registerResources".' in /var/www/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/goblog/protected/extensions/animation/MyAnimation.php(9): CComponent->__call('registerResourc...', Array)
+#1 /var/www/goblog/protected/extensions/animation/MyAnimation.php(9): MyAnimation->registerResources()
+#2 /var/www/framework/web/CBaseController.php(173): MyAnimation->run()
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(197): CBaseController->widget('ext.animation.M...')
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/05 00:35:14 [error] [exception.CException] exception 'CException' with message 'Property "ECarouFredSel.width" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('width', '100%')
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.carouFredSe...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.carouFredSe...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(237): CBaseController->widget('ext.carouFredSe...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---
+2014/05/05 04:02:24 [error] [exception.CException] exception 'CException' with message 'Property "ECarouFredSel.responsive" is not defined.' in /var/www/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/framework/web/CWidgetFactory.php(161): CComponent->__set('responsive', true)
+#1 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.carouFredSe...', Array)
+#2 /var/www/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.carouFredSe...', Array)
+#3 /var/www/goblog/themes/bootstrap/views/site/index.php(238): CBaseController->widget('ext.carouFredSe...', Array)
+#4 /var/www/framework/web/CBaseController.php(126): require('/var/www/goblog...')
+#5 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/goblog...', Array, true)
+#6 /var/www/framework/web/CController.php(869): CBaseController->renderFile('/var/www/goblog...', Array, true)
+#7 /var/www/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/goblog/protected/controllers/SiteController.php(52): CController->render('index', Array)
+#9 /var/www/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/goblog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/goblog/index.php?r=site/index
+HTTP_REFERER=http://localhost/goblog/index.php?r=site/index
+---

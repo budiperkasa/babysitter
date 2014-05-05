@@ -1,0 +1,39 @@
+#toTop {
+	display:block;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:30px;
+	overflow:hidden;
+	width:35px;
+	height:35px;
+	border:none;
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	text-align: center;
+	background: #222222;
+	border: 3px solid #2f96b4;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+#toTop:hover{
+	background-color:#3c4852;
+}
+
+#toTopHover {
+	color: #ffffff;
+	text-indent:100%;
+	font-size: 60px;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
