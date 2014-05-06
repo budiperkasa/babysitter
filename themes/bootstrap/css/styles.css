@@ -141,7 +141,7 @@ border-bottom: 1px solid #EEEEEE;
 	overflow:hidden;
 	position:absolute;
 	z-index:99999;
-	/* background:url(../img/pixelblack.png) repeat;*/
+	background:url(../img/pixelblack.png) repeat;
 	-webkit-border-radius: 4px 4px 0px 0px;
 	   -moz-border-radius: 4px 4px 0px 0px;
 		    border-radius: 4px 4px 0px 0px;
@@ -282,4 +282,75 @@ span.span_like i{
 width: auto;
 height: auto;
 position: relative;
+}
+/* :: SLIDER :: */
+.fullwidthbanner-container{
+	width:100% !important;
+	position:relative;
+	padding:0;
+	max-height:500px !important;
+	overflow:hidden;
+}
+.fullwidthbanner{
+	max-height:450px;
+}
+.tp-caption.mypassion-title{
+	font-size:44px;
+	font-family:Myriad Pro;
+	line-height:50px;
+}
+.tp-caption.mypassion-title-caption-large{
+	font-size:34px;
+	font-family:Myriad Pro;
+	line-height:50px;
+	background:#03d3f8;
+	padding:10px 20px;
+	color:#FFF;
+	line-height:1;
+}
+.tp-caption.mypassion-title-caption-small{
+	font-size:18px;
+	font-family:Myriad Pro;
+	line-height:50px;
+	background:#03d3f8;
+	padding:10px 20px;
+	color:#FFF;
+	line-height:1;
+}
+.tp-caption.grey_text{
+	font-size:24px;
+	color:#3c4852;
+}
+.tp-caption.mypassion-themecolor-fixedwidth{
+	font-size:18px;
+	font-family:Myriad Pro;
+	line-height:50px;
+	background:#03d3f8;
+	padding:10px 20px;
+	color:#FFF;
+	line-height:1;
+	width:350px;
+	text-align:left;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	 -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.tp-caption.mypassion-greycolor-fixedwidth{
+	font-size:18px;
+	font-family:Myriad Pro;
+	line-height:50px;
+	background:#f5f5f5;
+	padding:10px 20px;
+	color:#3c4852;
+	line-height:1;
+	width:350px;
+	text-align:left;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	 -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.mypassion-greycolor-fixedwidth i{
+	margin-right:10px;
+	font-size:15px;
+	color:#03d3f8;
 }

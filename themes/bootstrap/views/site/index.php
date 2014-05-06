@@ -11,14 +11,9 @@ $this->pageTitle=Yii::app()->name;
 
 					
 							<?php endif; ?>
-<div class="row">
-	<div class="span8">
-	<?php echo $this->renderPartial('/partial/carousel');?>
-	</div>
-	<div class="span4">
-	<?php echo $this->renderPartial('/partial/heroUnit');?>			
-	</div>
-</div>
+
+<?php echo $this->renderPartial('/partial/paralax');?>	
+
 <div class="container"> 
 <div class="home-badge">
 	<div class="content-badge">
@@ -151,7 +146,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="icon-link-1"></i></span></a>
+                            <a href="#"><span><i class="fa fa-link"></i></span></a>
                         </div>
                         <a href="#"><img src="img/trash/garden1.jpg" alt="BabySitter" /></a>
                     </div>
@@ -166,7 +161,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="icon-link-1"></i></span></a>
+                            <a href="#"><span><i class="fa fa-link"></i></span></a>
                         </div>
                         <a href="#"><img src="img/trash/bs.jpg" alt="BabySitter" /></a>
                     </div>
@@ -178,7 +173,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="icon-link-1"></i></span></a>
+                            <a href="#"><span><i class="fa fa-link"></i></span></a>
                         </div>
                         <a href="#"><img src="img/trash/bs2.jpg" alt="BabySitter" /></a>
                     </div>
@@ -190,7 +185,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="icon-link-1"></i></span></a>
+                            <a href="#"><span><i class="fa fa-link"></i></span></a>
                         </div>
                         <a href="#"><img src="img/trash/driver.jpg" alt="BabySitter" /></a>
                     </div>
@@ -202,7 +197,7 @@ $this->pageTitle=Yii::app()->name;
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                    		<a href="#"><span><i class="icon-link-1"></i></span></a>
+                    		<a href="#"><span><i class="fa fa-link"></i></span></a>
                         </div>
                         <a href="#"><img src="img/trash/maid3.jpg" alt="BabySitter" /></a>
                     </div>
