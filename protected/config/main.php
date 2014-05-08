@@ -10,7 +10,7 @@
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'BabySitter.co.id',
+	'name'=>'Pramuwisma.com',
 
 	// preloading 'log' component
 	'preload'=>array(
@@ -105,6 +105,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'admin@pramuwisma.com',
 	),
 );

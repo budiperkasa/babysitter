@@ -1,5 +1,5 @@
 #page {
-    padding-top: 60px;
+    padding-top: 45px;
 }
 p {
 font-family: 'Pt Sans', Arial, sans-serif;
@@ -13,11 +13,19 @@ font-family: 'Pt Sans', Arial, sans-serif;
 .home.hero-unit h1{
 	font-size:35px;
 }
-.heading {
+heading {
 font-size: 24px;
 }
+#modalHomePage {
+position: absolute;
+}
+.copyright {
+background: #242C32;
+padding: 20px 0 5px 0;
+border-top: 1px solid #3c4852;
+}
 h1.center-title {
-font-size: 16px;
+font-size: 20px;
 margin-bottom: 20px;
 line-height: 1;
 position: relative;
@@ -30,6 +38,9 @@ text-align:center;
 .button-wrap {
 float: right;
 margin: 25px 0 0 0;
+}
+.home-badge {
+margin-top:1px;
 }
 .content-badge {
 	background: #fafafa;
@@ -166,8 +177,8 @@ border-bottom: 1px solid #EEEEEE;
 .maskImage a span i{
 	color:#FFF;
 	font-size:20px;
-	margin-left:10px;
-	margin-top:13px;
+	margin-left:14px;
+	margin-top:15px;
 }
 .og-grid li .maskImage a span i{
 	margin-left:-13px;
@@ -353,4 +364,25 @@ position: relative;
 	margin-right:10px;
 	font-size:15px;
 	color:#03d3f8;
+}table{
+	width:100%;
+	text-align:left;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	border-spacing: 0;
+	margin-bottom:15px;
+	color:#696969;
+}
+table th{
+	vertical-align:top;
+	background:#fafafa;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	padding:10px;
+}
+table td{
+	vertical-align:top;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	padding:10px;
 }

@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
 							<?php endif; ?>
 
 <?php echo $this->renderPartial('/partial/paralax');?>	
-
+<?php $this->widget('ext.paradox.MyParadox'); ?>
 <div class="container"> 
 <div class="home-badge">
 	<div class="content-badge">
@@ -31,8 +31,7 @@ $this->pageTitle=Yii::app()->name;
 						<div class="modal-header"><!--Modal-header start-->
 							<a class="close" data-dismiss="modal">&times;</a>
 							<h4>Contact Us</h4>
-							<p>If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-							</p>
+
 						</div><!--Modal-header end-->
 						<div class="modal-body"><!--Modal-body start-->
 							<div class="form">
@@ -106,18 +105,18 @@ $this->pageTitle=Yii::app()->name;
 
 														'label'=>'Email',
 
-														'url'=>'mail:admin@babysitter.com'
+														'url'=>'mail:admin@pramuwisma.com'
 
 														),
 
 													array(
 														'label'=>'Telepon', 
-														'url'=>'tlp:0218908900'),
+														'url'=>'tlp:02189606000'),
 													array(
 														'label'=>'Yahoo Massanger', 
-														'url'=>'ym:babysitter@yahoo.com'),
+														'url'=>'ym:pramuwisma@yahoo.com'),
 													'---',
-													array('label'=>'Blackberry Massanger', 'url'=>'bb:0898AT88'),
+													array('label'=>'Blackberry Massanger', 'url'=>'bbm:28149D3B'),
 												)),
 								),
 							)); ?>
@@ -139,81 +138,67 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 </div>
 <?php $this->widget('ext.animation.MyAnimation'); ?>
-<!-- Portfolio -->
         <div class="fullblock padding50">
-            
             <div class="portfolio_blocks_wrap" id="carousel">
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="fa fa-link"></i></span></a>
+                            <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=tukang_kebun"><span><i class="fa fa-link"></i></span></a>
                         </div>
-                        <a href="#"><img src="img/trash/garden1.jpg" alt="BabySitter" /></a>
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=tukang_kebun"><img src="img/trash/garden1.jpg" alt="BabySitter" /></a>
                     </div>
-                	
                     <div class="title_holder">
-                        <h1><a href="#">Gardener / Tukang Kebun</a></h1>
+                        <h1><a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=tukang_kebun">Gardener / Tukang Kebun</a></h1>
                     </div>
-                </div>
-                
-            
-                
+                </div> 
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="fa fa-link"></i></span></a>
+                            <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=nany"><span><i class="fa fa-link"></i></span></a>
                         </div>
-                        <a href="#"><img src="img/trash/bs.jpg" alt="BabySitter" /></a>
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=nany"><img src="img/trash/bs.jpg" alt="BabySitter" /></a>
                     </div>
                     <div class="title_holder">
-                        <h1><a href="#">Nanny / Perawat</a></h1>
+                        <h1><a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=nany">Nanny / Perawat</a></h1>
                     </div>
                 </div>
                 
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="fa fa-link"></i></span></a>
+                            <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=baby_sitter"><span><i class="fa fa-link"></i></span></a>
                         </div>
-                        <a href="#"><img src="img/trash/bs2.jpg" alt="BabySitter" /></a>
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=baby_sitter"><img src="img/trash/bs2.jpg" alt="BabySitter" /></a>
                     </div>
                     <div class="title_holder">
-                        <h1><a href="#">Baby Sitter</a></h1>
+                        <h1><a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=baby_sitter">Baby Sitter</a></h1>
                     </div>
-                </div>
-                
+                </div> 
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                            <a href="#"><span><i class="fa fa-link"></i></span></a>
+                            <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=supir"><span><i class="fa fa-link"></i></span></a>
                         </div>
-                        <a href="#"><img src="img/trash/driver.jpg" alt="BabySitter" /></a>
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=supir"><img src="img/trash/driver.jpg" alt="BabySitter" /></a>
                     </div>
                     <div class="title_holder">
-                        <h1><a href="#">Driver / Supir</a></h1>
+                        <h1><a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=supir">Driver / Supir</a></h1>
                     </div>
-                </div>
-                
+                </div>   
                 <div class="item">
                 	<div class="image-wrap">
                     	<div class="maskImage">
-                    		<a href="#"><span><i class="fa fa-link"></i></span></a>
+                    		<a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=pembantu"><span><i class="fa fa-link"></i></span></a>
                         </div>
-                        <a href="#"><img src="img/trash/maid3.jpg" alt="BabySitter" /></a>
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=pembantu"><img src="img/trash/maid3.jpg" alt="BabySitter" /></a>
                     </div>
                     <div class="title_holder">
-                        <h1><a href="#">Maid / Pembantu </a></h1>
+                        <h1><a href="<?php echo Yii::app()->baseUrl; ?>/index.php?r=site/page&view=pembantu">Maid / Pembantu </a></h1>
                     </div>
                 </div>
             </div>
-         
-            
             <div class="clearfix"></div>
-           
-        </div>
-        <!-- /Portfolio -->
-        
-
+        </div>      
 <?php 
 $this->widget('ext.carouFredSel.ECarouFredSel', array(
     'id' => 'carousel',

@@ -1,6 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/settings.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/animation.css" />
-<!--[if lt IE 9]> <script type="text/javascript" src="http://www.babysitterhidupmulia.com/js/customM.js"></script> <![endif]-->      
+ 
             <!-- Header Slider -->
             <div class="head-slider">
             	<div class="fullwidthbanner-container">
@@ -18,19 +16,19 @@
 											 data-easing="easeOutExpo" data-end="8100" data-endspeed="600" data-endeasing="easeInSine" ><img src="<?php echo Yii::app()->baseUrl; ?>/images/slides/alphard_white.png" alt="MyPassion"></div>                          
                                              
                                         <div class="caption mypassion-title lft ltt"
-											 data-x="500"
+											 data-x="466"
 											 data-y="100"
 											 data-speed="600"
 											 data-start="900"
 											 data-easing="easeOutExpo" data-end="8200" data-endspeed="600" data-endeasing="easeInSine" ><span style="color:#03d3f8;">Pramuwisma.com</span><br/>  Penyalur Baby Sitter & PRT terbaik</div>
 
                                         <div class="caption mypassion-text lfr ltr"
-											 data-x="500"
+											 data-x="466"
 											 data-y="220"
 											 data-speed="600"
 											 data-start="1000"
 											 data-easing="easeOutExpo"  data-end="8300" data-endspeed="600" data-endeasing="easeInSine" > 
-											 <p>Yayasan Hidup Mulia adalah partner Anda dalam mencari, memilih dan menemukan Asisten Rumah Tangga <br> dan tenaga kerja lain yang tepat, sesuai dengan kebutuhan rumah tangga Anda.<br> Kami mendidik serta menyalurkan seperti: </p>
+											 <p>Pramuwisma.com adalah partner Anda dalam mencari, memilih dan menemukan Asisten Rumah Tangga <br> dan tenaga kerja lain yang tepat, sesuai dengan kebutuhan rumah tangga Anda.<br> Kami mendidik serta menyalurkan seperti: </p>
 											 <table width="100%">
 												<tr>
 													<td>» Baby Sitter </td> 
@@ -146,29 +144,3 @@
 				</div>
             </div>
 
-    
-    
-
-
-
-<!-- SCRIPTS -->
-
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/easing.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/ui.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/modernizr.custom.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/nicescroll.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/sticky.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/superfish.js"></script>
-
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jflickrfeed.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/flexslider-min.js"></script>
-
-
-<!-- jQuery REVOLUTION Slider -->
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.themepunch.plugins.min.js"></script>
-
-
-
-<!--[if lt IE 9]> <script type="text/javascript" src="js/html5.js"></script> <![endif]-->
-<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/mypassion.js"></script>
